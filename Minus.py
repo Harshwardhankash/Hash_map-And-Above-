@@ -70,7 +70,7 @@ def checkEmail(s):
 
 
 
-
+f=time.time()
 emails=[]
 emails1=[]
 hm={}
@@ -134,4 +134,4 @@ for i in range(0, r2):
 
 
 a=time.time()
-print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(hm2))+" emails; "+"Time taken: "+str(a)+" seconds")
+print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(hm2))+" emails; "+"Time taken: "+str(a-f)+" seconds")
