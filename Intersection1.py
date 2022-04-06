@@ -91,7 +91,7 @@ hm33={}
 r1=0
 r2=0
 
-
+f=time.time()
 
 def random_char(N):
 
@@ -147,4 +147,4 @@ for i in range(0, r2):
 
 
 a=time.time()
-print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(hm2))+" emails; "+"Time taken: "+str(a)+" seconds")
+print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(hm2))+" emails; "+"Time taken: "+str(a-f)+" seconds")
