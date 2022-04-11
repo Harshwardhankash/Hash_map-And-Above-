@@ -143,7 +143,7 @@ r2=0
 #         f111.write(str(d1) + '\n')
 #         # f111.write(random_char(7)+"@"+str(random_char(7))+".com")
 
-
+#main()
 f=time.time()
 
 with open("L1.txt",'r') as f12:
