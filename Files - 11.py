@@ -7,7 +7,7 @@ def random_char(N):
 
 
     return res
-
+#main()
 with open("L1.txt","w") as f11:
     for i in range(random.randint(0,1000000)):
         d=str(random_char(random.randint(0,320))+"@"+str(random_char(random.randint(0,320)))+"."+str(random_char(random.randint(0,320))))
