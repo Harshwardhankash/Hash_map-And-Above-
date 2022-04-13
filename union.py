@@ -1,20 +1,30 @@
 import sys
 import time
+import os
+
 
 l1={}
-def union(s,i):
-    if (hm1.get(s)==None):
-        hm1.update({s:i})
+def union(f_1,f_2):
+
+    s=len(f_1)
+    d=len(f_2)
+    for i in range(0,s):
+        if (l1.get(f_1[i])==None):
+            l1.update({s:i})
+    for i in  range(0,d):
+        if (l1.get(f_2[i])==None):
+            l1.update({s:i})
+    return (l1)
 
 
 
 def split(word):
-    hm.update()
+    l1.update()
     return list(word)
 def checkEmail(s):
     k=split(s)
-    #d=k[1]
-    #print(ord(d))
+    d=k[1]
+    print(ord(d))
     count=0
     k1=0
     g=0
@@ -43,9 +53,6 @@ def checkEmail(s):
             if(k1==1):
                 g = 2
                 if(k1==1):
-
-
-
                     continue
         if(ord(i)==46):
             count=count+1
@@ -57,74 +64,41 @@ def checkEmail(s):
         return False
 
 
+f = time.time()
+def validate_args(sys.argv):
+    if(os.path.exists(y)):
+        return (y)
+    
+
+def read_file(l1122_file):
+    emails1=[]
+    fl={}
+
+    with open(l1122_file, 'r') as f2:
+        for email in f2.readlines():
+            emails1.append(email)
+        r2 = len(l1122_file)
+        for i in range(0, r2):
+            hm3 = {emails1[i], i}
+            d111 = checkEmail(emails1[i])
+
+            if (d111 == True):
+
+                fl.update(l2_file)
+            return (fl)
 
 
+a=time.time()
+def write_file(result):
+    #print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(l1))+" emails; "+"Time taken: "+str(a-f)+" seconds")
+    print(result)
+if __name__=="__main__":
+    l1_file,l2_file,ret_file=validate_args(sys.argv)
 
-emails=[]
-emails1=[]
-hm={}
-l2={}
-hm3={}
-hm33={}
-r1=0
-r2=0
+    # l2_file=validate_args(sys.argv[1])
+    # ret_file=validate_args(sys.argv[2])
 
-def main():
-
-if _name_=="__main__":
-    l1_file,l2_file,ret_file=validate_args(argv)
     l1=read_file(l1_file)
     l2=read_file(l2_file)
     result=union(l1,l2)
     write_file(result)
-
-
-f = time.time()
-with open("l1_file.txt",'r') as f12:
-    for email in f12.readlines():
-        emails.append(email)
-    r1=len(emails)
-
-validate_args(argv):
-
-return l1_file
-
-
-    if(r1>0):
-        return(l1_file)
-return (l1_file)
-
-
-for i in range(0,r1):
-
-    d11=checkEmail(emails[i])
-    if(d11==True):
-
-        union(emails[i],i)
-
-
-
-
-
-
-with open("l2_file.txt", 'r') as f2:
-    for email in f2.readlines():
-        emails1.append(email)
-
-    r2 = len(emails1)
-validate_args(argv):
-return (l2_file)
-
-for i in range(0, r2):
-
-    hm3 = {emails1[i], i}
-    d111 = checkEmail(emails1[i])
-
-    if (d111 == True):
-
-        union(emails1[i], i)
-
-
-a=time.time()
-
-print(str(sys.argv[1])+" "+str(r1)+" emails,"+str(sys.argv[2])+" "+str(r2)+" emails,"+" "+str(sys.argv[3])+" "+str(len(l1))+" emails; "+"Time taken: "+str(a-f)+" seconds")
