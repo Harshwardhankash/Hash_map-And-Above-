@@ -5,7 +5,16 @@ import os
 
 l1={}
 def union(f_1,f_2):
+    """
+    Finding the union of two dictionaries
 
+    Args:
+    file_1 file_2 (dict):dictionaries to find union
+
+    Returns:
+    dictionaries of union of two dictionaries
+
+    """
     s=len(f_1)
     d=len(f_2)
     for i in range(0,s):
